@@ -24,10 +24,4 @@ describe 'Creating a card' do
     card = Card.new('clubs', '20')
     card.message.must_match('Invalid rank.')
   end
-
-  it 'with invalid params does not add to deck' do
-    card = Card.new('Coins', '10')
-    card.message.wont_match('Card added to deck.')
-    card.message.must_match('Invalid suit.')
-  end
 end
