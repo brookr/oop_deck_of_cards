@@ -27,7 +27,7 @@ end
 
 # Create cards and check to see if it's valid.
 class Card
-  attr_accessor :suit, :rank, :message
+  attr_accessor :suit, :rank
   SUITS = %w(clubs diamonds hearts spades)
   RANKS = { '11' => 'jack', '12' => 'queen', '13' => 'king' }
 
