@@ -1,6 +1,7 @@
 require 'spec_helper'
 require 'cards'
 # http://www.rubyinside.com/a-minitestspec-tutorial-elegant-spec-style-testing-that-comes-with-ruby-5354.html
+# http://stackoverflow.com/questions/22970627/raise-argumenterror-ruby
 
 describe 'Creating a card' do
   it 'with a particular suit and rank' do
@@ -16,12 +17,14 @@ describe 'Creating a card' do
   end
 
   it 'returns error message with invalid suit' do
-    card = Card.new('Coins', '10')
-    card.message.must_match('Invalid suit.')
+    assert_raises ArgumentError do
+      Card.new('Coins', '10')
+    end
   end
 
   it 'returns error message with invalid rank' do
-    card = Card.new('clubs', '20')
-    card.message.must_match('Invalid rank.')
+    assert_raises ArgumentError do
+      Card.new('clubs', '20')
+    end
   end
 end

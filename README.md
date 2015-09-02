@@ -3,7 +3,7 @@
 <h2>Overview</h2>
 
 <p>
-I wanted to be able to create cards with a particular suit and rank and check to see if the card already existed so there wouldn't be duplicate cards in the deck.
+I wanted to create cards with a particular suit and rank and check to see if the card already existed so there wouldn't be duplicate cards in the deck.
 </p>
 
 <h2>Sources</h2>
@@ -16,3 +16,5 @@ I wanted to be able to create cards with a particular suit and rank and check to
 <a href="http://www.rubyinside.com/a-minitestspec-tutorial-elegant-spec-style-testing-that-comes-with-ruby-5354.html">http://www.rubyinside.com/a-minitestspec-tutorial-elegant-spec-style-testing-that-comes-with-ruby-5354.html</a>
 </p>
 
+<p>
+<a href="http://stackoverflow.com/questions/22970627/raise-argumenterror-ruby">http://stackoverflow.com/questions/22970627/raise-argumenterror-ruby</a>
