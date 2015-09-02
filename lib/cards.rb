@@ -1,17 +1,16 @@
+# http://stackoverflow.com/questions/22970627/raise-argumenterror-ruby
 # Create deck and check cards for uniqueness.
 class Deck
-  attr_accessor :deck, :message
+  attr_accessor :deck
   def initialize
     @deck = []
-    @message = nil
   end
 
   def add_card(card)
     if check_unique(card) == false
-      @message = 'Card not added to deck.'
+      fail(ArgumentError)
     else
       @deck << card
-      @message = 'Card added to deck.'
     end
   end
 
@@ -36,12 +35,12 @@ class Card
     if Card.check_suit(suit.downcase) == true
       @suit = suit.downcase
     else
-      return @message = 'Invalid suit.'
+      fail(ArgumentError)
     end
     if !Card.check_rank(rank).nil?
       @rank = Card.check_rank(rank)
     else
-      return @message = 'Invalid rank.'
+      fail(ArgumentError)
     end
   end
 
