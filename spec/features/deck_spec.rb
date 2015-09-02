@@ -1,5 +1,7 @@
 require 'spec_helper'
-require 'cards'
+require 'card'
+require 'deck'
+
 # http://chriskottom.com/blog/2014/10/4-fantastic-ways-to-set-up-state-in-minitest/
 # http://stackoverflow.com/questions/22970627/raise-argumenterror-ruby
 
